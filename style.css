@@ -121,3 +121,11 @@ li {
 	color: black;
 	border-color: blue;
 }
+
+.red {
+	color: red;
+}
+
+.paragraph {
+	font-size: 16px;
+}

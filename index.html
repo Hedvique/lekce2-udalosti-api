@@ -25,9 +25,21 @@
 
 	<p class="paragraph">V elipse spí lev.</p>
 
+	<button onclick="priKliknuti()">červený po kliknutí</button>
+	<button onclick="priKliknuti2()">větší po kliknutí</button>
+
 	<h3>Skladba</h3>
 
-	<audio src="audio/dingdingdang.mp3" preload="auto"></audio>
+	<button onclick="play()">přehrát</button>
+	<button onclick="pause()">pauza</button>
+	<button onclick="volumeDown()">ztišit</button>
+	<button onclick="volumeNormal()">hlasitost tak akorát</button>
+	<button onclick="volumeUp()">hlasitost na maximum</button>
+	<button onclick="backToStart()">nastav na začátek</button>
+	
+
+
+	<audio id="song" src="audio/dingdingdang.mp3" preload="auto"></audio>
 
 	<script src="main.js"></script>
 </body>
