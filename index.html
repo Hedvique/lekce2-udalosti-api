@@ -10,20 +10,11 @@
 </head>
 
 <body>
-
-	<h1>Změna tříd, události</h1>
-
-	<div class="ctverecek zluty"></div>
-
-	<div class="ctverecek zeleny"></div>
-
-	<img class="obrazek" src="obrazky/kocka.jpg">
-
-	<button class="tlacitko">Čudlajs</button>
-
 	<h3>Odstavec</h3>
 
-	<p class="paragraph">V elipse spí lev.</p>
+	<p class="paragraph" 
+	onmouseover="ztučni()" 
+	onmouseout="ztenči()">V elipse spí lev.</p>
 
 	<button onclick="priKliknuti()">červený po kliknutí</button>
 	<button onclick="priKliknuti2()">větší po kliknutí</button>
@@ -36,7 +27,7 @@
 	<button onclick="volumeNormal()">hlasitost tak akorát</button>
 	<button onclick="volumeUp()">hlasitost na maximum</button>
 	<button onclick="backToStart()">nastav na začátek</button>
-	
+
 
 
 	<audio id="song" src="audio/dingdingdang.mp3" preload="auto"></audio>

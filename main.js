@@ -6,8 +6,17 @@ function priKliknuti() {
     paragraph.classList.toggle('red');
 }
 
+function ztučni(){
+    paragraph.style.fontWeight = ('bold');
+}
+
+function ztenči(){
+    paragraph.style.fontWeight = ('normal')
+}
+
 function priKliknuti2(){
-    paragraph.style.fontSize = '17px';
+    let computedSize = window.getComputedStyle(paragraph, null).getPropertyValue('font-size');
+    paragraph.style.fontSize = (parseFloat(computedSize) + 1) + 'px';
 }
 
 let song = document.querySelector('#song');
