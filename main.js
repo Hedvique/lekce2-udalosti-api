@@ -1,45 +1,50 @@
 // tady je místo pro náš program
 let paragraph = document.querySelector('p');
-paragraph.style.fontSize = '16px';
 
 function priKliknuti() {
     paragraph.classList.toggle('red');
 }
 
-function ztučni(){
+function ztučni() {
     paragraph.style.fontWeight = ('bold');
 }
 
-function ztenči(){
+function ztenči() {
     paragraph.style.fontWeight = ('normal')
 }
 
-function priKliknuti2(){
+/*function priKliknuti2(){
     let computedSize = window.getComputedStyle(paragraph, null).getPropertyValue('font-size');
     paragraph.style.fontSize = (parseFloat(computedSize) + 1) + 'px';
+}*/
+
+let klik = 16;
+function priKliknuti2() {
+    klik++
+    paragraph.style.fontSize = klik + "px";
 }
 
 let song = document.querySelector('#song');
-function play(){
+function play() {
     song.play();
 }
 
-function pause(){
+function pause() {
     song.pause();
 }
 
-function volumeDown(){
+function volumeDown() {
     song.volume = 0;
 }
 
-function volumeNormal(){
+function volumeNormal() {
     song.volume = 0.5;
 }
 
-function volumeUp(){
+function volumeUp() {
     song.volume = 1;
 }
 
-function backToStart(){
+function backToStart() {
     song.currentTime = 0;
 }
