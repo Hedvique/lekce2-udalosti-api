@@ -13,11 +13,6 @@ function ztenči() {
     paragraph.style.fontWeight = ('normal')
 }
 
-/*function priKliknuti2(){
-    let computedSize = window.getComputedStyle(paragraph, null).getPropertyValue('font-size');
-    paragraph.style.fontSize = (parseFloat(computedSize) + 1) + 'px';
-}*/
-
 let klik = 16;
 function priKliknuti2() {
     klik++
