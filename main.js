@@ -1,22 +1,22 @@
 // tady je místo pro náš program
 let paragraph = document.querySelector('p');
 
-function priKliknuti() {
+function onClick() {
     paragraph.classList.toggle('red');
 }
 
-function ztučni() {
+function getThick() {
     paragraph.style.fontWeight = ('bold');
 }
 
-function ztenči() {
+function getThin() {
     paragraph.style.fontWeight = ('normal')
 }
 
-let klik = 16;
-function priKliknuti2() {
-    klik++
-    paragraph.style.fontSize = klik + "px";
+let click = 16;
+function onClick2() {
+    click++
+    paragraph.style.fontSize = click + "px";
 }
 
 let song = document.querySelector('#song');
